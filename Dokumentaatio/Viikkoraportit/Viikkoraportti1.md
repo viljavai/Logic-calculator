@@ -26,8 +26,4 @@ Su 23.7 - 4h
 
 Tällä viikolla käytin aikaa enimmäkseen algoritmin opiskeluun ja propositiologiikan kertailuun. Tässä vaiheessa hieman epäselvää ja huolestuttavaa on vielä totuustaulun luomisen korkea aika- ja tilavaativuus. Ohjelma ei välttämättä tule handlaamaan monen muuttujan syötteitä kovin hyvin. Olen myös pohtinut, pitäisikö tuplanegaation käsittely jättää pois vai implementoida jotenkin.<br>
 <br>
-<<<<<<< HEAD:Dokumentaatio/Viikkoraportit/Viikkoraportti1
 Ihan ensimmäisenä koitan saada syötteen käsittelyn ja algoritmin toimimaan, sen jälkeen totuustaulun luomisen, sitten CNF- ja DNF-muotojen luomisen ja jos aikaa jää niin muuttujien lisäämisen.
-=======
-Ihan ensimmäisenä koitan saada syötteen käsittelyn ja algoritmin toimimaan, sen jälkeen totuustaulun luomisen, sitten CNF- ja DNF-muotojen luomisen ja jos aikaa jää niin muuttujien lisäämisen.
->>>>>>> 8921514d9b1d47fcb5ead4069868dc4ade7802cb:Dokumentaatio/Viikkoraportit/Viikkoraportti1.md
