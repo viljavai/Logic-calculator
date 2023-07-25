@@ -2,7 +2,7 @@
 
 - Ohjelma tehdään Python-kielellä. Pystyn tarvittaessa vertaisarvioimaan myös Javalla tehtyjä projekteja, mutta aika paljon heikommin kuin Pythonia.
 - Ohjelmassa käytetään Shunting yard -algoritmia.
-- Ohjelmalla voidaan tulostaa predikaattilogiikan lauseille totuustaulu, CNF-muoto tai DNF-muoto. Shunting yard -algoritmi soveltuu hyvin projektiin, koska se käy hyvin aritmeettisten operaatioiden käsittelyyn ja pystytään soveltamaan tätä myös propositiologiikkaan.
+- Ohjelmalla voidaan tulostaa propositiologiikan lauseille totuustaulu, CNF-muoto tai DNF-muoto. Shunting yard -algoritmi soveltuu hyvin projektiin, koska se käy hyvin aritmeettisten operaatioiden käsittelyyn ja pystytään soveltamaan tätä myös propositiologiikkaan.
 - Syötteitä:
   > - "totuustaulu A AND B => A OR C" Tämän tulostus olisi tautologia, eli totuustaulu, jossa kaikki arvot TRUE.
   > - "CNF (A and B) or C" Tämän tulostus olisi "(A or B) and (B or C)"
