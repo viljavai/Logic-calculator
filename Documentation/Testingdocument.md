@@ -4,7 +4,7 @@ Tests can be executed from terminal with the command <br>
 >`poetry run invoke test`
 
 ### Test coverage
-Test coverage can be found in html-format [here.](/htmlcov/index.html) <br>
+![coverage report](/Documentation/images/coverage.png)
 You can also fetch the coverage from terminal with the command  <br>
 >`poetry run invoke coverage`
 
