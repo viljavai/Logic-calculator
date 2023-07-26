@@ -9,7 +9,7 @@
   > - "CNF (A and B) or C" This would output "(A or B) and (B or C)"
   > - "DNF (A or B) and C" This would output "(A and C) or (B and C)"
 - Everything is in English, except weekly reports are in Finnish.
-- The study program is TKT-kandi (Computer Science Bachelor).
+- The study program is TKT-kandi.
 
 ### Time Complexity Analysis
 
