@@ -4,7 +4,7 @@ Tests can be executed from terminal with the command <br>
 >`poetry run invoke test`
 
 ### Test coverage
-![coverage report](/Documentation/images/coverage.png)
+![coverage report](/Documentation/images/coverage.png) <br>
 You can also fetch the coverage from terminal with the command  <br>
 >`poetry run invoke coverage`
 
