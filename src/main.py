@@ -3,6 +3,7 @@ from shunting_yard import shunting_yard
 from create_table import create_truth_table
 from truth_table import evaluate
 from cnf import create_cnf
+from dnf import create_dnf
 
 def main():
     guide= '''
@@ -51,7 +52,7 @@ def main():
             break
         try:
             operation, expression = user_input.split(' ', 1)
-            valid = ["table","postfix", "cnf"]
+            valid = ["table","postfix", "cnf","dnf"]
             if operation not in valid:
                 raise ValueError("Invalid operation, check your input!")
         except ValueError:
@@ -77,6 +78,15 @@ def main():
                 table = create_truth_table(postfix,expression)[0]
                 variables = create_truth_table(postfix,expression)[1]
                 print(create_cnf(table,variables))
+            except SyntaxError as error:
+                print(str(error))
+        
+        elif operation == "dnf":
+            try:
+                postfix = shunting_yard(expression)
+                table = create_truth_table(postfix,expression)[0]
+                variables = create_truth_table(postfix,expression)[1]
+                print(create_dnf(table,variables))
             except SyntaxError as error:
                 print(str(error))
 
