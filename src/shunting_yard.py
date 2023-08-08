@@ -33,7 +33,7 @@ def shunting_yard(expression):
 
         if token not in allowed and not token.isalpha():
             raise SyntaxError(f"Expression contains invalid character: {token}, please check your input!")
-    
+
         if token in prec:
             while len(opstack) > 0 and opstack[-1] != '(' and (prec[token] < prec[opstack[-1]] or
             (prec[token] == prec[opstack[-1]] and

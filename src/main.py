@@ -1,7 +1,8 @@
 import sys
-import traceback
 from shunting_yard import shunting_yard
-from truth_table import create_truth_table, evaluate
+from create_table import create_truth_table
+from truth_table import evaluate
+from cnf import create_cnf
 
 def main():
     guide= '''
@@ -48,28 +49,37 @@ def main():
         user_input = input("Enter an operation and expression: ")
         if user_input == "quit":
             break
-        else:
-            try:
-                operation, expression = user_input.split(' ', 1)
-                valid = ["table","postfix"]
-                if operation not in valid:
-                    raise ValueError("Invalid operation, check your input!")
-            except:
-                print("Invalid operation, check your input!")
-                sys.exit(1)
-            
+        try:
+            operation, expression = user_input.split(' ', 1)
+            valid = ["table","postfix", "cnf"]
+            if operation not in valid:
+                raise ValueError("Invalid operation, check your input!")
+        except ValueError:
+            print("Invalid operation, check your input!")
+            sys.exit(1)
+
         if operation == "table":
             try:
                 postfix = shunting_yard(expression)
-                create_truth_table(postfix, expression)
+                print(create_truth_table(postfix, expression)[0])
             except SyntaxError as error:
                 print(str(error))
-        
+
         elif operation == "postfix":
             try:
                 print(shunting_yard(expression))
             except SyntaxError as error:
                 print(str(error))
+
+        elif operation == "cnf":
+            try:
+                postfix = shunting_yard(expression)
+                table = create_truth_table(postfix,expression)[0]
+                variables = create_truth_table(postfix,expression)[1]
+                print(create_cnf(table,variables))
+            except SyntaxError as error:
+                print(str(error))
+
 
 if __name__ == "__main__":
     main()

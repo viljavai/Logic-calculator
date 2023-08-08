@@ -1,5 +1,5 @@
 import unittest
-from truth_table import evaluate, create_truth_table
+from truth_table import evaluate
 
 class Testevaluate(unittest.TestCase):
     def test_output_1_ff(self):
@@ -116,10 +116,6 @@ class Testevaluate(unittest.TestCase):
         result = evaluate(postfix, variable_bool)
         assert result == True
 
-
-class Testcreate_truth_table(unittest.TestCase):
-    def test_output(self):
-        pass
 
 if __name__ == '__main__':
     unittest.main()
