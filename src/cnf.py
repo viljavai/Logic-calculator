@@ -1,4 +1,5 @@
 def create_cnf(truth_table, variables):
+    print(truth_table)
     rows = truth_table.split("\n")
     cnf = []
 
