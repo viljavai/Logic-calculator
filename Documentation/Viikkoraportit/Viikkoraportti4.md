@@ -9,11 +9,15 @@ Ma 7.8 - 2h
 - Tehty toimivat cnf- ja dnf-funktiot.
 
 9.8 - 3h
-- Kirjoitin testejä cnf- ja dnf-funktioille. Nämä toimivat nyt.
+- Kirjoitin testejä cnf- ja dnf-funktioille. Nämä funktiot toimivat nyt.
 - Kokonais-testikattavuus 99%.
 - Aloitin jonkunlaisen suorituskykytestauksen tekemisen.
-- Kaikki suunnitellut osat ohjelmasta on nyt toteutettu, vielä pitää lisätä konkatenoitujen muuttujien tunnistaminen shunting yard -algoritmiin.
 
-Suorituskykytestaus on vielä vähän kysymysmerkki, ajattelin testata totuustaulun tekemiseen kuluvaa aikaa riippuen muuttujien määrästä. Tästä voisi tehdä jonkin hienon käppyrän.
+Suorituskykytestaus on vielä vähän kysymysmerkki, ajattelin testata totuustaulun tekemiseen kuluvaa aikaa riippuen muuttujien määrästä.
 - Onko tämä ^ ihan ok?
 - Pitäisikö postfix-muunnokseen kuluvaa aikaa mitata myös? Tämän aikavaativuushan on yleisesti tiedossa. 
+
+10.8 - 2h
+- Tein suorituskykytestausta, käppyrä saatu aikaan
+
+Kaikki suunnitellut osat ohjelmasta on nyt toteutettu, vielä pitäisi ehkä lisätä jonkin verran error handlingia.

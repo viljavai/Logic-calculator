@@ -10,8 +10,8 @@ def main():
     =======================================
     |            Operators                 |
     =======================================
-    |  variables    |  Upper- and lower-   |
-    |               |  case letters a-z    |
+    |  variables    |  Single upper- and   |
+    |               | lowercase letters a-z|
     ---------------------------------------
     |       &       |       AND            |
     ---------------------------------------
@@ -35,7 +35,7 @@ def main():
     |     DNF       |   Gives expression   |
     |               |     in DNF-form      |
     ---------------------------------------
-    |    postfix    |Gives given expression|
+    |    postfix    |  Gives expression    |
     |               | in postfix notation  |
     =======================================
 
@@ -43,6 +43,7 @@ def main():
     o Quit with input "quit"
     o Double negation is supported when bracketed i.e ~(~a) is ok, ~~a is not okay
     o Do not use spaces i.e a&b is okay, a & b is not okay
+    o Concatenated variables are not allowed i.e AB is an invalid variable
 
     '''
     print(guide)

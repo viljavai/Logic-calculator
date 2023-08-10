@@ -19,7 +19,6 @@ def shunting_yard(expression):
     opstack = []
     postfix = []
 
-    # todo: error handling for concatenated variables
 
     if len(expression) == 0:
         raise SyntaxError("Empty input!")
@@ -57,5 +56,6 @@ def shunting_yard(expression):
         postfix.append(opstack.pop())
     if '(' in opstack:
         raise SyntaxError("Expression contains mismatched brackets, please check your input!")
+
 
     return postfix
