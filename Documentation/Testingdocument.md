@@ -23,4 +23,5 @@ You can fetch static analysis information from terminal with the command <br>
 System testing has been run manually.
 
 ### Performance testing
-We measure time elapsed for generating a truth table with number n of variables. 
+![coverage report](/Documentation/Images/my_benchmark.svg) <br>
+Time elapsed has been measured for generating a truth table with number 1-20 of variables. This is done in file truth_table_performance.py. 
