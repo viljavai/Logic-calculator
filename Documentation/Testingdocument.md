@@ -30,4 +30,4 @@ Time elapsed has been measured for generating a truth table with number 1-20 of 
 Performance testing can be run with command <br>
 >`pytest -v truth_table_performance.py` <br>
 
-from file tests.
+from file tests. (This will take a few minutes)
