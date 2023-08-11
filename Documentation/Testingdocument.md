@@ -23,11 +23,14 @@ You can fetch static analysis information from terminal with the command <br>
 System testing has been run manually.
 
 ### Performance testing
-Time elapsed has been measured for generating a truth table with number 1-20 of variables using pytest benchmark. This is done in the file truth_table_performance.py. The graph below was generated using pytest benchmark-histogram. <br>
-<br>
+![coverage report](/Documentation/Images/execution_times.png) <br>
 
-![coverage report](/Documentation/Images/my_benchmark.svg) <br>
-Performance testing can be run with command <br>
+Time elapsed has been measured for generating a truth table with number 1-20 of variables using pytest benchmark. This is done in the file truth_table_performance.py. Performance testing can be run with command <br>
 >`pytest -v truth_table_performance.py` <br>
 
 from file tests. (This will take a few minutes)
+
+The graph below was generated using pytest benchmark-histogram. <br>
+<br>
+
+![coverage report](/Documentation/Images/my_benchmark.svg) <br>
