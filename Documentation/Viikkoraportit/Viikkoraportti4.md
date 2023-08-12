@@ -3,12 +3,12 @@
 Ma 7.8 - 2h
 - Aloittelin CNF-funtion tekemistä, tämä osoittautui vaikeammaksi kuin olin alunperin ajatellut. Jonkinlaista refaktorointia pitää luultavasti tehdä tällä viikolla.
 
-8.8 - 3h
+Ti 8.8 - 3h
 - Muokattu totuustaulun palauttavaa funktiota
 - Tehty cnf-funktiota
 - Tehty toimivat cnf- ja dnf-funktiot.
 
-9.8 - 3h
+Ke 9.8 - 3h
 - Kirjoitin testejä cnf- ja dnf-funktioille. Nämä funktiot toimivat nyt.
 - Kokonais-testikattavuus 99%.
 - Aloitin jonkunlaisen suorituskykytestauksen tekemisen.
@@ -17,7 +17,7 @@ Suorituskykytestaus on vielä vähän kysymysmerkki, ajattelin testata totuustau
 - Onko tämä ^ ihan ok?
 - Pitäisikö postfix-muunnokseen kuluvaa aikaa mitata myös? Tämän aikavaativuushan on yleisesti tiedossa. 
 
-10.8 - 2h
+To 10.8 - 2h
 - Tein suorituskykytestausta, käppyrä saatu aikaan
 
 Kaikki suunnitellut osat ohjelmasta on nyt toteutettu, vielä pitäisi ehkä lisätä jonkin verran error handlingia.
