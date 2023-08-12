@@ -18,6 +18,7 @@ def shunting_yard(expression):
 
     opstack = []
     postfix = []
+    previous_token = None
 
 
     if len(expression) == 0:
@@ -28,12 +29,16 @@ def shunting_yard(expression):
 
     for token in expression:
         if token.isalpha():
+            if previous_token == token:
+                raise SyntaxError(f"Expression contains concatenated variables: {previous_token}{token}, please check your input!")
             postfix.append(token)
 
         if token not in allowed and not token.isalpha():
             raise SyntaxError(f"Expression contains invalid character: {token}, please check your input!")
 
         if token in prec:
+            if previous_token in prec:
+                raise SyntaxError(f"Expression contains concatenated operators: {previous_token}{token}, please check your input!")
             while len(opstack) > 0 and opstack[-1] != '(' and (prec[token] < prec[opstack[-1]] or
             (prec[token] == prec[opstack[-1]] and
             assoc[token] == lr_associative)):
@@ -50,6 +55,8 @@ def shunting_yard(expression):
             while opstack[-1] != '(' and len(opstack) > 0:
                 postfix.append(opstack.pop())
             opstack.pop()
+
+        previous_token = token
 
     while len(opstack) > 0 and opstack[-1] != '(':
         #If opstack[-1] == '(', there are mismatched brackets

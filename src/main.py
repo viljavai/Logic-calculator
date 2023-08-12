@@ -1,4 +1,3 @@
-import sys
 from shunting_yard import shunting_yard
 from create_table import create_truth_table
 from truth_table import evaluate
@@ -58,7 +57,7 @@ def main():
                 raise ValueError("Invalid operation, check your input!")
         except ValueError:
             print("Invalid operation, check your input!")
-            sys.exit(1)
+            continue
 
         if operation == "table":
             try:

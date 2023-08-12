@@ -62,6 +62,21 @@ class Testshunting_yard(unittest.TestCase):
         except SyntaxError as error:
             assert str(error) == "Expression contains invalid character: ?, please check your input!", f"Error: {str(error)}"
 
+    def test_output_concatenated_variable(self):
+        try:
+            wrong_expression = "aa>b"
+            result = shunting_yard(wrong_expression)
+            assert False, "Expected a SyntaxError, no error"
+        except SyntaxError as error:
+            assert str(error) == "Expression contains concatenated variables: aa, please check your input!", f"Error: {str(error)}"
+
+    def test_output_concatenated_operator(self):
+        try:
+            wrong_expression = "a&&b"
+            result = shunting_yard(wrong_expression)
+            assert False, "Expected a SyntaxError, no error"
+        except SyntaxError as error:
+            assert str(error) == "Expression contains concatenated operators: &&, please check your input!", f"Error: {str(error)}"
 
 if __name__ == '__main__':
     unittest.main()

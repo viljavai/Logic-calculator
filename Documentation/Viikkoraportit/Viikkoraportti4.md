@@ -20,4 +20,7 @@ Suorituskykytestaus on vielä vähän kysymysmerkki, ajattelin testata totuustau
 To 10.8 - 2h
 - Tein suorituskykytestausta, käppyrä saatu aikaan
 
-Kaikki suunnitellut osat ohjelmasta on nyt toteutettu, vielä pitäisi ehkä lisätä jonkin verran error handlingia.
+La 12.8 - 1h
+- Tein error handlingia shunting_yard funktioon
+
+Kaikki suunnitellut osat ohjelmasta on nyt toteutettu. 
