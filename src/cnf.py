@@ -5,6 +5,7 @@ def create_cnf(truth_table, variables):
 
     for row in rows[2:]:
         elements = row.split(" | ")
+        # Choose all false rows and add corresponding variables, negated
         if elements[-1] == "0":
             term = []
             for i, val in enumerate(elements[:-1]):
