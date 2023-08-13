@@ -4,6 +4,7 @@ def create_dnf(truth_table, variables):
 
     for row in rows[2:]:
         elements = row.split(" | ")
+        # Choose all true rows and add variables as they are
         if elements[-1] == "1":
             term = []
             for i, val in enumerate(elements[:-1]):
