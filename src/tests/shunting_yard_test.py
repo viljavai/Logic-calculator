@@ -21,6 +21,11 @@ class Testshunting_yard(unittest.TestCase):
         expression = "A&A"
         correct_postfix = ["A","A","&"]
         self.assertEqual(shunting_yard(expression), correct_postfix)
+    
+    def test_output_5(self):
+        expression = "(a|b)>~c"
+        correct_postfix = ["a","b","|","c","~",">"]
+        self.assertEqual(shunting_yard(expression), correct_postfix)
 
     def test_mismatched_brackets_too_many_right(self):
         try:

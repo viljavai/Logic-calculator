@@ -44,7 +44,7 @@ def shunting_yard(expression):
                 f"{token}, please check your input!")
 
         if token in prec:
-            if previous_token in prec:
+            if previous_token == token:
                 raise SyntaxError(
                     f"Expression contains concatenated operators: "
                     f"{previous_token}{token}, please check your input!")
