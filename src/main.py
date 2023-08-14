@@ -1,6 +1,5 @@
 from shunting_yard import shunting_yard
 from create_table import create_truth_table
-from truth_table import evaluate
 from cnf import create_cnf
 from dnf import create_dnf
 
@@ -80,7 +79,7 @@ def main():
                 print(create_cnf(table,variables))
             except SyntaxError as error:
                 print(str(error))
-        
+
         elif operation == "dnf":
             try:
                 postfix = shunting_yard(expression)

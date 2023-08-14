@@ -20,8 +20,8 @@ def evaluate(postfix, variable_bool):
             elif token == '|':
                 result = oper1 or oper2
             elif token == '>':
-                """ this is an equivalent form that can be checked with a truth table
-                for example if you don't believe me """
+                #this is an equivalent form that can be checked with a truth table
+                #for example if you don't believe me
                 result = (not oper1) or oper2
             elif token == '=':
                 result = oper1 == oper2
