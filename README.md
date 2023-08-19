@@ -19,7 +19,6 @@ This program is a calculator that utilizes the Shunting Yard algorithm. It can b
 ### Input
 - Input operation in lowercase 
 - Variables can be letters a-z in upper- or lowercase
-- Quit with input "quit"
 - Double negation is supported when bracketed i.e `~(~a)` is ok, `~~a` is not okay
 - Do not use spaces i.e `a&b` is okay, `a & b` is not okay
 - Concatenated variables are not allowed i.e `ab` is an invalid variable
