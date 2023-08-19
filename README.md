@@ -7,7 +7,7 @@ This program is a calculator that utilizes the Shunting Yard algorithm. It can b
 1. Download dependencies: `poetry install`
 2. Start application: `poetry run invoke start`
 3. A guide will open up in the terminal, provide your input
-4. Quit with input "quit"
+4. Quit with input `quit`
 
 ### Example Inputs
 - `table ~(a&b)|c` - Truth table of expression "not(a and b) or c"
