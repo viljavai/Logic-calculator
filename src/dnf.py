@@ -1,4 +1,13 @@
 def create_dnf(truth_table, variables):
+    """Function that creates the DNF-form from the truth table of the given expression
+
+    Args: 
+        truth_table: The generated truth table
+        variables(set): A set of variables used in the expression
+
+    Returns:
+        The DNF-form of the original expression
+    """
     rows = truth_table.split("\n")
     dnf = []
 

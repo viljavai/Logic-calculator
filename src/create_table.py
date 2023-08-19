@@ -2,6 +2,17 @@ import itertools
 from truth_table import evaluate
 
 def create_truth_table(postfix, expression):
+    """Function that creates the truth table
+
+    Args: 
+        postfix(list): The original expression in postfix notation
+        expression(string): The original expression
+
+    Returns:
+        table: The final truth table
+        variables(set): A set of variables used in the expression
+
+    """
     # Each variable should appear only once -> set
     variables = set()
     variable_bool = {}
@@ -23,4 +34,4 @@ def create_truth_table(postfix, expression):
         table_lines.append(row)
     table = "\n".join(table_lines)
 
-    return table,variables,table_lines
+    return table,variables

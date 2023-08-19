@@ -11,6 +11,54 @@ The program is a calculator that utilizes the Shunting Yard algorithm. It can be
 3. Guide will open up in the terminal, give your input
 4. Quit with input "quit"
 
+### Example inputs
+- table ~(a&b)|c 
+    > truth table of expression "not(a and b) or c"
+- cnf (a>b)=~(~a)
+    > cnf form of expression "(a implies b) equals not(not a)"
+- dnf (h|f)>i
+    > dnf form of expression "(h or f) implies i"
+- postfix k&m
+    > postfix notation of expression "k and m"
+
+## General information
+### Input
+- Input operation in lowercase 
+- Variables can be letters a-z in upper- or lowecase
+- Quit with input "quit"
+- Double negation is supported when bracketed i.e ~(~a) is ok, ~~a is not okay
+- Do not use spaces i.e a&b is okay, a & b is not okay
+- Concatenated variables are not allowed i.e ab is an invalid variable
+- Expressions are read from left to right if not bracketed, for example "h|f>i" is interpreted as "(h|f)>i"
+- Expression can contain excess brackets as long as they match, for example ((a)) is valid, (a)) is not valid
+
+### CNF- and DNF-forms
+- CNF-form is derived from the truth table by choosing the rows where the expression is false, negating the values of the variables on that row and connecting them as in the example given:
+    > input: <br>
+    > table (a|c)>~(c&b)<br>
+    > output: <br>
+    a | b | c | (a|c)>~(c&b)<br>
+    ==============<br>
+    0 | 0 | 0 | 1<br>
+    0 | 0 | 1 | 1<br>
+    0 | 1 | 0 | 1<br>
+    0 | 1 | 1 | 0<br>
+    1 | 0 | 0 | 1<br>
+    1 | 0 | 1 | 1<br>
+    1 | 1 | 0 | 1<br>
+    1 | 1 | 1 | 0
+
+    > input: <br>
+    > cnf (a|c)>~(c&b) <br>
+    > output: <br>
+    > (a|~b|~c)&(~a|~b|~c)
+
+- DNF-form is derived from the truth table by choosing the rows where the expression is true and connecting them as in the example given:
+    > input: <br>
+    > dnf (a|c)>~(c&b) <br>
+    > output: <br>
+    > (~a&~b&~c)|(~a&~b&c)|(~a&b&~c)|(a&~b&~c)|(a&~b&c)|(a&b&~c)
+
 ## Documentation
 - [Weekly report 1](Documentation/Viikkoraportit/Viikkoraportti1.md) <br>
 - [Weekly report 2](Documentation/Viikkoraportit/Viikkoraportti2.md) <br>

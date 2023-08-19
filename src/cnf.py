@@ -1,5 +1,14 @@
 def create_cnf(truth_table, variables):
-    print(truth_table)
+    """Function that creates the CNF-form from the truth table of the given expression
+
+    Args: 
+        truth_table: The generated truth table
+        variables(set): A set of variables used in the expression
+
+    Returns:
+        The CNF-form of the original expression
+
+    """
     rows = truth_table.split("\n")
     cnf = []
 

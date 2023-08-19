@@ -11,9 +11,9 @@ def main():
     |  variables    |  Single upper- and   |
     |               | lowercase letters a-z|
     ---------------------------------------
-    |       &       |       AND            |
+    |       &       |       and            |
     ---------------------------------------
-    |       |       |        OR            |
+    |       |       |        or            |
     ---------------------------------------
     |       >       |    implication       |
     ---------------------------------------
@@ -27,10 +27,10 @@ def main():
     |     table     |Gives truth table for |
     |               | the given expression |
     ---------------------------------------
-    |     CNF       |   Gives expression   |
+    |     cnf       |   Gives expression   |
     |               |     in CNF-form      |
     ---------------------------------------
-    |     DNF       |   Gives expression   |
+    |     dnf       |   Gives expression   |
     |               |     in DNF-form      |
     ---------------------------------------
     |    postfix    |  Gives expression    |

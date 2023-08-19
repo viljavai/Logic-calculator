@@ -1,4 +1,13 @@
 def evaluate(postfix, variable_bool):
+    """Function that generates the final column for the truth table
+
+    Args: 
+        postfix(list): The original expression in postfix notation
+        variable_bool(dict): possible boolean values for each variable
+
+    Returns:
+        Single boolean value corresponding to boolean values of variables
+    """
     stack = []
     operators = {'~', '&', '|', '>', '='}
 

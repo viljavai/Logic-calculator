@@ -1,4 +1,20 @@
 def shunting_yard(expression):
+    """Algorithm for parsing a logical expression to postfix notation
+
+    Args: 
+        expression(string) is a logical expression in infix notation
+
+    Raises:
+        SyntaxError if expression contains:
+            - nothing
+            - no variables
+            - concatenated variables or operators
+            - invalid variables or operators
+            - mismatched brackets
+    
+    Returns:
+        postfix(list) contains the expression in postfix notation
+    """
     #highest value means highest precedence
     #~: logical negation, &: and, |: or, >: implication, =: equivalence"""
     prec = {'~': 3, '&': 2, '|': 1, '>': 0, '=': 0}
@@ -38,11 +54,6 @@ def shunting_yard(expression):
                     f"{previous_token}{token}, please check your input!")
             postfix.append(token)
 
-        if token not in allowed and not token.isalpha():
-            raise SyntaxError(
-                f"Expression contains invalid character: "
-                f"{token}, please check your input!")
-
         if token in prec:
             if previous_token == token:
                 raise SyntaxError(
@@ -53,6 +64,11 @@ def shunting_yard(expression):
             assoc[token] == lr_associative)):
                 postfix.append(opstack.pop())
             opstack.append(token)
+
+        if token not in allowed and not token.isalpha():
+            raise SyntaxError(
+                f"Expression contains invalid character: "
+                f"{token}, please check your input!")
 
         elif token == '(':
             opstack.append(token)
@@ -69,13 +85,14 @@ def shunting_yard(expression):
 
         previous_token = token
 
-    while len(opstack) > 0 and opstack[-1] != '(':
-        #If opstack[-1] == '(', there are mismatched brackets
-        postfix.append(opstack.pop())
     if '(' in opstack:
         raise SyntaxError(
             "Expression contains mismatched brackets, "
             "please check your input!")
+
+    while len(opstack) > 0 and opstack[-1] != '(':
+        #If opstack[-1] == '(', there are mismatched brackets
+        postfix.append(opstack.pop())
 
 
     return postfix
