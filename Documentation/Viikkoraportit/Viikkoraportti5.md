@@ -1,4 +1,5 @@
 ### Viikkoraportti 5
-
-Tällä viikolla tein satunnaisia bugikorjauksia ja tein vertaisarvioinnin. 
+Yht. 2h
+<br>
+Tällä viikolla tein satunnaisia bugikorjauksia, doctringiä, käyttöohjetta ja vertaisarvioinnin. 
 Mielestäni ohjelma ja dokumentaatio ovat aikalailla valmiita. Näyttääkö kaikki hyvältä? 
