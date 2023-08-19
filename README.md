@@ -64,6 +64,7 @@ The program is a calculator that utilizes the Shunting Yard algorithm. It can be
 - [Weekly report 2](Documentation/Viikkoraportit/Viikkoraportti2.md) <br>
 - [Weekly report 3](Documentation/Viikkoraportit/Viikkoraportti3.md) <br>
 - [Weekly report 4](Documentation/Viikkoraportit/Viikkoraportti4.md) <br>
+- [Weekly report 5](Documentation/Viikkoraportit/Viikkoraportti5.md) <br>
 - [Specification document](Documentation/Specdocument.md)
 - [Testing document](Documentation/Testingdocument.md)
 - [Execution document](Documentation/Execdocument.md)
