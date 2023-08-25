@@ -20,7 +20,7 @@ You can fetch static analysis information from terminal with the command <br>
 - Cnf- and dnf-forms are checked in testing classes Testcnf and Testdnf. These have also been checked using WolframAlpha.
 
 ### System testing
-System testing has been run manually.
+System testing has been run manually including testing for invalid user inputs. 
 
 ### Performance testing
 ![coverage report](/Documentation/Images/execution_times.png) <br>
