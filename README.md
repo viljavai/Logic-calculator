@@ -65,6 +65,7 @@ Output:
 - [Weekly report 3](Documentation/Viikkoraportit/Viikkoraportti3.md)
 - [Weekly report 4](Documentation/Viikkoraportit/Viikkoraportti4.md)
 - [Weekly report 5](Documentation/Viikkoraportit/Viikkoraportti5.md)
+- [Weekly report 6](Documentation/Viikkoraportit/Viikkoraportti6.md)
 - [Specification document](Documentation/Specdocument.md)
 - [Testing document](Documentation/Testingdocument.md)
 - [Execution document](Documentation/Execdocument.md)
