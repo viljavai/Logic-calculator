@@ -79,9 +79,13 @@ def shunting_yard(expression):
                 raise SyntaxError(
                     "Expression contains mismatched brackets, "
                     "please check your input!")
-            while opstack[-1] != '(' and len(opstack) > 0:
+            while len(opstack) > 0 and opstack[-1] != '(':
                 postfix.append(opstack.pop())
-            opstack.pop()
+            if len(opstack) > 0:
+                opstack.pop()
+            else:
+                raise SyntaxError(
+                    "Expression contains mismatched brackets, please check your input!")
 
         previous_token = token
 
