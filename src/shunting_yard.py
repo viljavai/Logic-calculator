@@ -48,7 +48,7 @@ def shunting_yard(expression):
 
     for token in expression:
         if token.isalpha():
-            if previous_token == token:
+            if previous_token is not None and previous_token.isalpha():
                 raise SyntaxError(
                     f"Expression contains concatenated variables: "
                     f"{previous_token}{token}, please check your input!")

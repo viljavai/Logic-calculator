@@ -80,7 +80,6 @@ def main():
             except SyntaxError as error:
                 print(str(error))
 
-
         elif operation == "dnf":
             try:
                 postfix = shunting_yard(expression)
